@@ -1,61 +1,67 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jenkins CI/CD Pipeline</title>
+    <title>Jenkins CI/CD Assignment</title>
     <style>
         body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #111827, #1f2937);
             color: white;
             text-align: center;
-            font-family: Arial, sans-serif;
-            margin-top: 120px;
         }
 
-        .box {
-            background: rgba(255,255,255,0.1);
+        .container {
+            margin: 80px auto;
+            width: 75%;
             padding: 40px;
-            border-radius: 20px;
-            width: 70%;
-            margin: auto;
-            box-shadow: 0px 0px 25px rgba(255,255,255,0.3);
+            border-radius: 18px;
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 42px;
+            margin-bottom: 10px;
         }
 
         h2 {
-            color: #00ff99;
+            color: #22c55e;
         }
 
-        h3 {
-            color: #ffcc00;
+        .flow {
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #facc15;
+        }
+
+        .footer {
+            margin-top: 35px;
+            color: #d1d5db;
         }
     </style>
 </head>
-
 <body>
-    <div class="box">
-        <h1>🚀 Jenkins CI/CD Pipeline Running Successfully 🚀</h1>
-
+    <div class="container">
+        <h1>Jenkins CI/CD Pipeline Running Successfully</h1>
         <h2>Branch: DEVELOP</h2>
 
-        <h3>Deployment Flow</h3>
+        <div class="flow">
+            GitHub -> Jenkins Master -> Test Node -> Production Node
+        </div>
 
         <p>
-            GitHub ➜ Jenkins Master ➜ Test Node ➜ Production Node
+            This website was automatically deployed using a Jenkins pipeline.
         </p>
 
         <p>
-            Automated deployment completed successfully.
+            The code was first deployed to the Test server and then promoted to the Production server after successful execution.
         </p>
 
-        <p>
-            Powered by AWS EC2 + Jenkins + GitHub + CI/CD
-        </p>
+        <div class="footer">
+            Powered by AWS EC2, Jenkins, GitHub, Nginx, and CI/CD automation.
+        </div>
     </div>
 </body>
 </html>
-
-
